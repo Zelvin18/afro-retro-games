@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 1.5rem;
 }
 
 .logo-link {
@@ -357,29 +357,7 @@
   color: #ff7a00;
 }
 
-.mobile-toggle {
-  display: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 0.8rem;
-  border: 1px solid rgba(84, 38, 181, 0.2);
-  background: #fff;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.26rem;
-  z-index: 100;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.mobile-toggle span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  background: #251c45;
-}
+/* mobile-toggle base + animation are fully managed in Improvements.css */
 
 @media (max-width: 620px) {
   .games-grid {

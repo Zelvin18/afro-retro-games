@@ -153,6 +153,7 @@
     cursor: pointer;
     z-index: 100;
     position: relative;
+    flex-shrink: 0;
   }
 
   .mobile-toggle span {
