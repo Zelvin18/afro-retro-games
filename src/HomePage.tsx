@@ -134,7 +134,7 @@ export default function HomePage() {
           </div>
           <div className="games-grid">
             {games.map((game) => (
-              <article key={game.name} className="game-card">
+              <Link key={game.name} to={`/book/${game.id}`} className="game-card game-card-link" aria-label={`View ${game.name}`}>
                 <div className="game-media">
                   <img src={game.image} alt={game.name} loading="lazy" />
                 </div>
@@ -143,11 +143,9 @@ export default function HomePage() {
                   <p>{game.description}</p>
                 </div>
                 <div className="game-actions">
-                  <Link className="game-button" to={`/book/${game.id}`} aria-label={`Book now for ${game.name}`}>
-                    Book Now
-                  </Link>
+                  <span className="game-button">Book Now</span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
@@ -273,14 +271,14 @@ export default function HomePage() {
               { id: 'mini-golf', name: 'Mini Golf', img: '/games/Mini Golf Sets.png', catch: 'Putt your way to the best time of the night.' },
               { id: 'bouncing-castles', name: 'Bouncing Castles', img: '/games/Bouncing Castles.png', catch: 'Because everyone deserves to bounce.' },
             ].map(g => (
-              <div key={g.id} className="freq-card">
+              <Link key={g.id} to={`/book/${g.id}`} className="freq-card freq-card-link" aria-label={`View ${g.name}`}>
                 <div className="freq-img"><img src={g.img} alt={g.name} /></div>
                 <div className="freq-body">
                   <h3>{g.name}</h3>
                   <p>{g.catch}</p>
-                  <Link to={`/book/${g.id}`} className="freq-book-btn">Book Now</Link>
+                  <span className="freq-book-btn">Book Now</span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

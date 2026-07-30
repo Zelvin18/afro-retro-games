@@ -90,7 +90,12 @@ export default function AllGamesPage() {
               {filtered.map((game) => {
                 const added = isAdded(game.id)
                 return (
-                  <article key={game.id} className="all-game-card">
+                  <article
+                    key={game.id}
+                    className="all-game-card"
+                    onClick={() => navigate(`/book/${game.id}`)}
+                    style={{ cursor: 'pointer' }}
+                  >
                     <div className="game-media">
                       <img src={game.image} alt={game.name} loading="lazy" />
                     </div>
@@ -98,7 +103,7 @@ export default function AllGamesPage() {
                       <h3>{game.name}</h3>
                       <p>{game.description}</p>
                     </div>
-                    <div className="game-actions">
+                    <div className="game-actions" onClick={e => e.stopPropagation()}>
                       <button
                         className={`add-game-btn ${added ? 'added' : 'not-added'}`}
                         onClick={() => added ? removeGame(game.id) : addGame(game)}
