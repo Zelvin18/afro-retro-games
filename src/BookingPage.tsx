@@ -46,6 +46,8 @@ export default function BookingPage() {
   // Auto-add the current game when page loads
   useEffect(() => {
     if (game) addGame(game)
+    // addGame is stable (context), game.id is the real dependency
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [game?.id])
 
   const scrollToBooking = () => {

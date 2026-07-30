@@ -99,7 +99,7 @@ export default function EventPage({ config }: Props) {
             <p>Browse all our games and build your perfect event package — or pick from our ready-made bundles.</p>
             <div className="event-booking-btns">
               <Link to="/games" className="banner-btn-primary">Browse All Games</Link>
-              <Link to="/contact" className="banner-btn-outline" style={{ border: '2px solid #5426b5', color: '#5426b5' }}>Get a Custom Quote</Link>
+              <Link to="/contact" className="banner-btn-outline">Get a Custom Quote</Link>
             </div>
           </div>
         </div>

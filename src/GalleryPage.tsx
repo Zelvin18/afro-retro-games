@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
 import './App.css'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './GalleryPage.css'
 
 const allImages = [
@@ -45,7 +46,7 @@ export default function GalleryPage() {
             We bring unforgettable indoor and outdoor games to birthdays, school celebrations, private
             events, and corporate experiences.
           </p>
-          <a href="/" className="hero-button">Start Your Event Journey</a>
+          <Link to="/games" className="hero-button">Start Your Event Journey</Link>
         </div>
       </section>
 

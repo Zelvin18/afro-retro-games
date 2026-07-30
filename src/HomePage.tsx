@@ -83,12 +83,13 @@ const clients = [
   { name: 'The Villa', logo: '/clients/The Villa .png' },
 ]
 
+const bannerSlides = [
+  { src: '/banner/1a.jpg', kicker: 'AfroRetro Games Experiences', heading: 'Where Fun Meets Creativity for Every Event', sub: 'We bring unforgettable indoor and outdoor games to birthdays, school celebrations, private events, and corporate experiences.' },
+  { src: '/banner/2a.jpg', kicker: 'Game Hire & Event Packages', heading: 'The Games You Grew Up With — Bigger & Better', sub: 'From Giant Jenga to VR sets, we deliver, set up, and make your event one for the books.' },
+  { src: '/banner/3a.png', kicker: 'Culture Meets Play', heading: 'Bringing Communities Together Through Games', sub: 'Rooted in African culture, built for every occasion — AfroRetro is more than games, it\'s connection.' },
+]
+
 export default function HomePage() {
-  const bannerSlides = [
-    { src: '/banner/1a.jpg', kicker: 'AfroRetro Games Experiences', heading: 'Where Fun Meets Creativity for Every Event', sub: 'We bring unforgettable indoor and outdoor games to birthdays, school celebrations, private events, and corporate experiences.' },
-    { src: '/banner/2a.jpg', kicker: 'Game Hire & Event Packages', heading: 'The Games You Grew Up With — Bigger & Better', sub: 'From Giant Jenga to VR sets, we deliver, set up, and make your event one for the books.' },
-    { src: '/banner/3a.png', kicker: 'Culture Meets Play', heading: 'Bringing Communities Together Through Games', sub: 'Rooted in African culture, built for every occasion — AfroRetro is more than games, it\'s connection.' },
-  ]
   const [slide, setSlide] = useState(0)
 
   useEffect(() => {

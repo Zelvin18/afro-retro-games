@@ -7,32 +7,28 @@ import { saveBooking } from './supabase'
 import './App.css'
 import './BookingPage.css'
 
-const packageData: Record<string, { name: string; price: string; color: string; gameIds: string[]; description: string }> = {
+const packageData: Record<string, { name: string; price: string; gameIds: string[]; description: string }> = {
   'starter-spark': {
     name: 'Starter Spark',
     price: '200,000 UGX',
-    color: '#e53e3e',
     description: 'The perfect entry-level package — fun, simple, and great for intimate gatherings.',
     gameIds: ['cornhole', 'giant-jenga', 'tic-tac-toe', 'ring-toss'],
   },
   'retro-vibes': {
     name: 'Retro Vibes',
     price: '350,000 UGX',
-    color: '#d4a017',
     description: 'A curated mix of classics with a host to keep the energy going all event long.',
     gameIds: ['cornhole', 'ring-toss', 'ludo-boards', 'giant-jenga', 'carrom-board', 'chess-boards'],
   },
   'tula-tucheze': {
     name: 'Tula Tucheze',
     price: '450,000 UGX',
-    color: '#e53e3e',
     description: 'A full spread of games for bigger groups — with a host and board game variety.',
     gameIds: ['mini-golf', 'cornhole', 'ring-toss', 'chess-boards', 'carrom-board', 'ludo-boards', 'giant-jenga', 'tic-tac-toe'],
   },
   'afro-playhouse': {
     name: 'Afro Playhouse',
     price: '550,000 UGX',
-    color: '#d4a017',
     description: 'The ultimate AfroRetro experience — maximum games, maximum fun, with a host included.',
     gameIds: ['giant-connect-4', 'cornhole', 'ring-toss', 'giant-jenga', 'tic-tac-toe', 'chess-boards', 'ludo-boards', 'carrom-board', 'mini-golf'],
   },
@@ -54,9 +50,10 @@ export default function PackageBookingPage() {
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [])
 
+  const pkgGames = pkg ? (pkg.gameIds.map(id => games.find(g => g.id === id)).filter(Boolean) as typeof games) : []
+
   useEffect(() => {
     if (pkg) {
-      const pkgGames = pkg.gameIds.map(id => games.find(g => g.id === id)).filter(Boolean) as typeof games
       setSelectedGames(pkgGames)
       setPackageName(pkg.name)
     }
@@ -139,8 +136,6 @@ export default function PackageBookingPage() {
       </div>
     </div>
   )
-
-  const pkgGames = pkg.gameIds.map(id => games.find(g => g.id === id)).filter(Boolean) as typeof games
 
   if (submitted) return (
     <div className="site-shell">
