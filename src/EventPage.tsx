@@ -72,7 +72,7 @@ export default function EventPage({ config }: Props) {
             </div>
             <div className="all-games-grid">
               {recommended.map(game => (
-                <article key={game.id} className="all-game-card">
+                <Link key={game.id} to={`/book/${game.id}`} className="all-game-card game-card-link" aria-label={`View ${game.name}`}>
                   <div className="game-media">
                     <img src={game.image} alt={game.name} loading="lazy" />
                   </div>
@@ -81,9 +81,9 @@ export default function EventPage({ config }: Props) {
                     <p>{game.description}</p>
                   </div>
                   <div className="game-actions">
-                    <Link to={`/book/${game.id}`} className="add-game-btn not-added">Book Now</Link>
+                    <span className="add-game-btn not-added">Book Now</span>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>

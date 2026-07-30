@@ -235,7 +235,7 @@ export default function HomePage() {
               { id: 'tula-tucheze', name: 'Tula Tucheze', price: '450,000 UGX', img: '/games/Mini Golf Sets.png', games: ['Mini Golf', 'Cornhole', 'Ring Toss', 'Chess', 'Carrom Board', 'Ludo', 'Giant Jenga', 'TicTacToe', '2 Board Games', '1 Host'], desc: 'A full spread for bigger groups — variety, energy, and a host.' },
               { id: 'afro-playhouse', name: 'Afro Playhouse', price: '550,000 UGX', img: '/games/Giant Connect 4.png', games: ['Giant Connect 4', 'Cornhole', 'Ring Toss', 'Giant Jenga', 'Tic Tac Toe', 'Chess', 'Ludo', 'Carrom Board', 'Mini Golf', '2 Board Games', '1 Host'], desc: 'The ultimate AfroRetro experience — maximum games, maximum fun.' },
             ].map((pkg) => (
-              <div key={pkg.id} className="package-card">
+              <Link key={pkg.id} to={`/package/${pkg.id}`} className="package-card package-card-link" aria-label={`View ${pkg.name} package`}>
                 <div className="package-img-wrap">
                   <img src={pkg.img} alt={pkg.name} />
                   <div className="package-img-overlay" />
@@ -249,9 +249,9 @@ export default function HomePage() {
                   <div className="package-games">
                     {pkg.games.map(g => <span key={g} className="pkg-game-tag">{g}</span>)}
                   </div>
-                  <Link to={`/package/${pkg.id}`} className="package-book-btn">Book This Package</Link>
+                  <span className="package-book-btn">Book This Package</span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

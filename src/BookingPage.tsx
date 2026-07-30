@@ -205,13 +205,18 @@ export default function BookingPage() {
             {otherGames.map((g) => {
               const added = isAdded(g.id)
               return (
-                <div key={g.id} className="scroll-game-card">
+                <div
+                  key={g.id}
+                  className="scroll-game-card"
+                  onClick={() => window.location.href = `/book/${g.id}`}
+                  style={{ cursor: 'pointer' }}
+                >
                   <img src={g.image} alt={g.name} loading="lazy" />
                   <div className="scroll-game-card-body">
                     <h4>{g.name}</h4>
                     <button
                       className={`scroll-add-btn ${added ? 'added' : 'not-added'}`}
-                      onClick={() => added ? removeGame(g.id) : addGame(g)}
+                      onClick={(e) => { e.stopPropagation(); added ? removeGame(g.id) : addGame(g) }}
                     >
                       {added ? '✓ Added' : '+ Add'}
                     </button>

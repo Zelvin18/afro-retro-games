@@ -41,7 +41,7 @@
 .logo-link {
   display: flex;
   align-items: center;
-  min-width: 130px;
+  min-width: 0;
 }
 
 .logo-img {
@@ -89,6 +89,7 @@
   background: rgba(84, 38, 181, 0.08);
   color: #3b2080;
   outline: none;
+  text-decoration: none;
 }
 
 .dropdown-panel {
@@ -363,10 +364,14 @@
   border-radius: 0.8rem;
   border: 1px solid rgba(84, 38, 181, 0.2);
   background: #fff;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 0.26rem;
+  z-index: 100;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .mobile-toggle span {
@@ -1376,9 +1381,49 @@
 
 /* appended */
 
+/* ── Global: remove all underlines from nav + dropdown links ── */
+.nav-link,
+.nav-link:hover,
+.static-link,
+.static-link:hover,
+.dropdown-column a,
+.dropdown-column a:hover,
+.dropdown-column h3 a,
+.dropdown-column h3 a:hover,
+.mobile-nav-parent,
+.mobile-nav-parent:hover,
+.mobile-nav-section-title,
+.mobile-nav-section-title:hover,
+.mobile-nav-link,
+.mobile-nav-link:hover {
+  text-decoration: none;
+}
+
+/* ── Remove underlines from all card links and buttons ── */
+.game-card-link,
+.game-card-link:hover,
+.freq-card-link,
+.freq-card-link:hover,
+.package-card-link,
+.package-card-link:hover,
+.add-game-btn,
+.add-game-btn:hover,
+.game-button,
+.game-button:hover {
+  text-decoration: none;
+}
+
+/* ── Footer social icons — proper size ── */
+.footer-social-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
 /* ── Clickable card link resets ── */
 .game-card-link,
-.freq-card-link {
+.freq-card-link,
+.package-card-link {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -1387,7 +1432,8 @@
 }
 
 .game-card-link:hover,
-.freq-card-link:hover {
+.freq-card-link:hover,
+.package-card-link:hover {
   color: inherit;
   text-decoration: none;
 }

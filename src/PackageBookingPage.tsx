@@ -175,10 +175,10 @@ export default function PackageBookingPage() {
         <h2 style={{ margin: 0, fontSize: 'clamp(1.4rem,2vw,1.9rem)', color: '#1d1443' }}>What's Included in {pkg.name}</h2>
         <div className="games-grid">
           {pkgGames.map(g => (
-            <article key={g.id} className="game-card">
+            <Link key={g.id} to={`/book/${g.id}`} className="game-card game-card-link" aria-label={`View ${g.name}`}>
               <div className="game-media"><img src={g.image} alt={g.name} /></div>
               <div className="game-body"><h3>{g.name}</h3><p>{g.description}</p></div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>
