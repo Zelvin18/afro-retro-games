@@ -105,12 +105,12 @@ export const games: Game[] = [
     highlights: ['Portable course setup', 'Customisable layouts', 'All ages welcome', 'Indoor & outdoor'],
   },
   {
-    id: 'mini-golf-deluxe',
-    name: 'Mini Golf Sets (Deluxe)',
-    image: '/games/Mini Golf Sets1.png',
-    description: 'An expanded mini golf setup with extra obstacles for bigger spaces.',
-    tagline: 'More holes, more fun — the deluxe course is a full event experience on its own.',
-    highlights: ['Extended course layout', 'Extra obstacles & features', 'Perfect for large venues', 'Premium experience'],
+    id: 'foosball-table',
+    name: 'Foosball Table',
+    image: '/games/Foosball Table.png',
+    description: 'A classic competitive game of table soccer. With rotating rods and miniature players, foosball delivers quick matches, strategic play, and endless replay value for arcades, offices, and game rooms.',
+    tagline: 'Spin, shoot, score — foosball is the ultimate head-to-head game that never gets old.',
+    highlights: ['Fast-paced head-to-head play', 'Great for all skill levels', 'Perfect for offices & arcades', 'Indoor use'],
   },
   {
     id: 'omweso',

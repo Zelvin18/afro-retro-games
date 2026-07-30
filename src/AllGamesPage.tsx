@@ -6,8 +6,8 @@ import { useBooking } from './BookingContext'
 import './App.css'
 import './BookingPage.css'
 
-const outdoorIds = ['bouncing-castles', 'cornhole', 'mini-golf', 'mini-golf-deluxe', 'giant-jenga', 'giant-connect-4', 'ring-toss', 'trampolines', 'face-painting', 'canvas-painting', 'clowns-mascots']
-const indoorIds  = ['playstation-sets', 'virtual-reality', 'chess-boards', 'ludo-boards', 'carrom-board', 'tic-tac-toe', 'darts-board', 'table-tennis', 'omweso']
+const outdoorIds = ['bouncing-castles', 'cornhole', 'mini-golf', 'giant-jenga', 'giant-connect-4', 'ring-toss', 'trampolines', 'face-painting', 'canvas-painting', 'clowns-mascots']
+const indoorIds  = ['playstation-sets', 'virtual-reality', 'chess-boards', 'ludo-boards', 'carrom-board', 'tic-tac-toe', 'darts-board', 'table-tennis', 'omweso', 'foosball-table']
 
 type Filter = 'all' | 'indoor' | 'outdoor'
 
