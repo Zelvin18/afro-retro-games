@@ -1,75 +1,154 @@
-# React + TypeScript + Vite
+# AfroRetro Games — Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official website for **AfroRetro Games**, a game hire and event entertainment company based in Kampala, Uganda.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Layer | Technology |
+|---|---|
+| Framework | React 19 + TypeScript |
+| Build tool | Vite |
+| Routing | React Router v7 |
+| Backend / DB | Supabase (PostgreSQL) |
+| Hosting | Static CDN (Netlify / Vercel / Cloudflare Pages) |
+| Styling | Custom CSS (no framework) |
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── App.tsx                  # Root routes + WhatsApp FAB
+├── main.tsx                 # Entry point
+├── index.css                # Base reset
+├── App.css                  # Main global styles
+├── Improvements.css         # Mobile, drawer, FAB overrides
+├── gamesData.ts             # All 20 game definitions
+├── eventConfigs.ts          # All 31 event page configs
+├── supabase.ts              # Supabase client + DB helpers
+├── BookingContext.tsx        # Global booking state
+├── Navbar.tsx               # Desktop dropdown + mobile drawer
+├── HomePage.tsx
+├── AllGamesPage.tsx
+├── BookingPage.tsx
+├── PackageBookingPage.tsx
+├── ContactPage.tsx
+├── EventPage.tsx
+├── GalleryPage.tsx
+└── NotFoundPage.tsx
 
-## Expanding the ESLint configuration
+supabase/
+└── schema.sql               # Full database schema (run this in Supabase SQL Editor)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+public/
+├── games/                   # 20 game images
+├── gallery/                 # Event gallery photos
+├── clients/                 # Client logo images
+├── banner/                  # Hero slider images
+├── testimonials/            # Testimonial screenshots
+├── afroretro-logo.png
+├── footer-banner.png
+├── home.png
+└── favicon.svg
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Clone the repo
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Zelvin18/afro-retro-games.git
+cd afro-retro-games
 ```
-# afro-retro-games
-# afro-retro-games
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Set up environment variables
+
+Copy `.env.example` to `.env` and fill in your Supabase credentials:
+
+```bash
+cp .env.example .env
+```
+
+```env
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your_anon_key_here
+```
+
+### 4. Set up the database
+
+Open your [Supabase SQL Editor](https://supabase.com/dashboard) and run the contents of `supabase/schema.sql`. This creates both tables with correct indexes and Row Level Security policies.
+
+### 5. Run the dev server
+
+```bash
+npm run dev
+```
+
+### 6. Build for production
+
+```bash
+npm run build
+```
+
+Output goes to `dist/` — deploy this folder to any static host.
+
+## Database Tables
+
+See `supabase/schema.sql` for the full schema.
+
+### `bookings`
+Stores all booking requests from the website.
+
+| Column | Type | Notes |
+|---|---|---|
+| `id` | bigint | Auto-generated primary key |
+| `created_at` | timestamptz | Auto-set on insert |
+| `package_name` | text | null for individual game bookings |
+| `games` | jsonb | Array of `{ id, name }` objects |
+| `first_name` | text | |
+| `last_name` | text | |
+| `phone` | text | |
+| `email` | text | |
+| `event_date` | date | |
+| `event_time` | time | |
+| `address` | text | |
+| `city` | text | |
+| `location_type` | text | |
+| `occasion` | text | |
+| `guests` | text | Optional |
+| `notes` | text | Optional |
+
+### `contact_messages`
+Stores messages from the Contact page form.
+
+| Column | Type | Notes |
+|---|---|---|
+| `id` | bigint | Auto-generated primary key |
+| `created_at` | timestamptz | Auto-set on insert |
+| `name` | text | |
+| `email` | text | Optional |
+| `phone` | text | Optional |
+| `message` | text | |
+
+## Deployment
+
+The site is a static SPA. Deploy the `dist/` folder to:
+- **Netlify** — connect the GitHub repo, set build command to `npm run build`, publish directory to `dist`
+- **Vercel** — same setup, framework preset: Vite
+- **Cloudflare Pages** — same setup
+
+Make sure to set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` as environment variables in your hosting dashboard.
+
+For client-side routing to work (React Router), configure your host to serve `index.html` for all routes:
+- Netlify: add a `public/_redirects` file with `/* /index.html 200`
+- Vercel: add a `vercel.json` with rewrites
+- Cloudflare Pages: handled automatically
+
+## License
+
+© AfroRetro Games. All rights reserved.
