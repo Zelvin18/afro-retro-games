@@ -49,6 +49,8 @@
   height: auto;
   max-height: 72px;
   object-fit: contain;
+  object-position: left center;
+  display: block;
 }
 
 .main-nav {
