@@ -1372,10 +1372,6 @@
   .hero-slider { min-height: 460px; width: calc(100vw - 20px); border-radius: 1rem; }
   .hero-slider-content { min-height: 460px; padding: 2.2rem 1.4rem; max-width: 100%; }
   .hero-slide img { min-height: 460px; }
-  /* Hide desktop nav — mobile drawer (Improvements.css) takes over */
-  .main-nav { display: none; }
-  .games-header { align-items: flex-start; text-align: left; }
-  .games-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /* appended */
