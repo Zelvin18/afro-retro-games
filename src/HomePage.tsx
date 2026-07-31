@@ -6,14 +6,14 @@ import { FaXTwitter, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa6'
 import './App.css'
 
 const testimonials = [
-  '/testimonials/tWhatsAppImage20260423at10.11.34AM.jpeg',
-  '/testimonials/tWhatsAppImage20260423at10.11.35AM.jpeg',
-  '/testimonials/tWhatsAppImage20260423at10.11.35AM1.jpeg',
-  '/testimonials/tWhatsAppImage20260423at10.11.35AM2.jpeg',
-  '/testimonials/tWhatsAppImage20260423at10.11.35AM3.jpeg',
-  '/testimonials/tWhatsAppImage20260423at10.11.35AM4.jpeg',
-  '/testimonials/tWhatsAppImage20260423at10.11.35AM5.jpeg',
-  '/testimonials/tWhatsAppImage20260423at10.11.35AM6.jpeg',
+  'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516730/afroretro/testimonials/tWhatsAppImage20260423at10.11.34AM.jpg',
+  'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516734/afroretro/testimonials/tWhatsAppImage20260423at10.11.35AM.jpg',
+  'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516735/afroretro/testimonials/tWhatsAppImage20260423at10.11.35AM1.jpg',
+  'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516737/afroretro/testimonials/tWhatsAppImage20260423at10.11.35AM2.jpg',
+  'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516738/afroretro/testimonials/tWhatsAppImage20260423at10.11.35AM3.jpg',
+  'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516739/afroretro/testimonials/tWhatsAppImage20260423at10.11.35AM4.jpg',
+  'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516740/afroretro/testimonials/tWhatsAppImage20260423at10.11.35AM5.jpg',
+  'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516741/afroretro/testimonials/tWhatsAppImage20260423at10.11.35AM6.jpg',
 ]
 
 const faqs = [
@@ -56,37 +56,37 @@ function FaqSection() {
 }
 
 const galleryPreview = [
-  { src: '/gallery/1.jpg', alt: 'AfroRetro event 1' },
-  { src: '/gallery/2.jpg', alt: 'AfroRetro event 2' },
-  { src: '/gallery/3.jpg', alt: 'AfroRetro event 3' },
-  { src: '/gallery/4.jpg', alt: 'AfroRetro event 4' },
-  { src: '/gallery/5.jpg', alt: 'AfroRetro event 5' },
-  { src: '/gallery/6.jpg', alt: 'AfroRetro event 6' },
-  { src: '/gallery/7.jpg', alt: 'AfroRetro event 7' },
-  { src: '/gallery/8.jpg', alt: 'AfroRetro event 8' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516617/afroretro/gallery/1.jpg', alt: 'AfroRetro event 1' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516619/afroretro/gallery/2.jpg', alt: 'AfroRetro event 2' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516621/afroretro/gallery/3.jpg', alt: 'AfroRetro event 3' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516622/afroretro/gallery/4.jpg', alt: 'AfroRetro event 4' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516626/afroretro/gallery/5.jpg', alt: 'AfroRetro event 5' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516642/afroretro/gallery/6.jpg', alt: 'AfroRetro event 6' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516646/afroretro/gallery/7.jpg', alt: 'AfroRetro event 7' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516650/afroretro/gallery/8.jpg', alt: 'AfroRetro event 8' },
 ]
 
 const clients = [
-  { name: 'Bank of Africa', logo: '/clients/Bank of Africa .png' },
-  { name: 'BNI', logo: '/clients/BNI .png' },
-  { name: 'Boda Banja', logo: '/clients/Boda Banja.png' },
-  { name: 'EACOP', logo: '/clients/EACOP.png' },
-  { name: 'Fenon', logo: '/clients/Fenon.png' },
-  { name: 'Hotel 360', logo: '/clients/Hotel 360.png' },
-  { name: 'KPMG', logo: '/clients/KPMG.png' },
-  { name: 'Malembe', logo: '/clients/Malembe.png' },
-  { name: 'Ministry of Lands', logo: '/clients/Ministry of lands- Mukono.png' },
-  { name: 'Silo15', logo: '/clients/Silo15.png' },
-  { name: 'SM&Co', logo: '/clients/SM&Co.png' },
-  { name: 'Stanbic Bank', logo: '/clients/Stanbic bank.png' },
-  { name: 'Surveyors Institute Uganda', logo: '/clients/Surveyors institute Uganda.png' },
-  { name: 'The Villa', logo: '/clients/The Villa .png' },
+  { name: 'Bank of Africa', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516591/afroretro/clients/Bank-of-Africa-.png' },
+  { name: 'BNI', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516592/afroretro/clients/BNI-.png' },
+  { name: 'Boda Banja', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516594/afroretro/clients/Boda-Banja.jpg' },
+  { name: 'EACOP', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516595/afroretro/clients/EACOP.png' },
+  { name: 'Fenon', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516596/afroretro/clients/Fenon.png' },
+  { name: 'Hotel 360', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516597/afroretro/clients/Hotel-360.png' },
+  { name: 'KPMG', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516598/afroretro/clients/KPMG.png' },
+  { name: 'Malembe', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516599/afroretro/clients/Malembe.png' },
+  { name: 'Ministry of Lands', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516601/afroretro/clients/Ministry-of-lands--Mukono.jpg' },
+  { name: 'Silo15', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516603/afroretro/clients/Silo15.png' },
+  { name: 'SM&Co', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516605/afroretro/clients/SM-Co.png' },
+  { name: 'Stanbic Bank', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516607/afroretro/clients/Stanbic-bank.jpg' },
+  { name: 'Surveyors Institute Uganda', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516609/afroretro/clients/Surveyors-institute-Uganda.png' },
+  { name: 'The Villa', logo: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516611/afroretro/clients/The-Villa-.png' },
 ]
 
 const bannerSlides = [
-  { src: '/banner/1a.jpg', kicker: 'AfroRetro Games Experiences', heading: 'Where Fun Meets Creativity for Every Event', sub: 'We bring unforgettable indoor and outdoor games to birthdays, school celebrations, private events, and corporate experiences.' },
-  { src: '/banner/2a.jpg', kicker: 'Game Hire & Event Packages', heading: 'The Games You Grew Up With — Bigger & Better', sub: 'From Giant Jenga to VR sets, we deliver, set up, and make your event one for the books.' },
-  { src: '/banner/3a.png', kicker: 'Culture Meets Play', heading: 'Bringing Communities Together Through Games', sub: 'Rooted in African culture, built for every occasion — AfroRetro is more than games, it\'s connection.' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516587/afroretro/banner/1a.jpg', kicker: 'AfroRetro Games Experiences', heading: 'Where Fun Meets Creativity for Every Event', sub: 'We bring unforgettable indoor and outdoor games to birthdays, school celebrations, private events, and corporate experiences.' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516588/afroretro/banner/2a.jpg', kicker: 'Game Hire & Event Packages', heading: 'The Games You Grew Up With — Bigger & Better', sub: 'From Giant Jenga to VR sets, we deliver, set up, and make your event one for the books.' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516590/afroretro/banner/3a.jpg', kicker: 'Culture Meets Play', heading: 'Bringing Communities Together Through Games', sub: 'Rooted in African culture, built for every occasion — AfroRetro is more than games, it\'s connection.' },
 ]
 
 export default function HomePage() {
@@ -230,10 +230,10 @@ export default function HomePage() {
           </div>
           <div className="packages-grid">
             {[
-              { id: 'starter-spark', name: 'Starter Spark', price: '200,000 UGX', img: '/games/Cornhole.png', games: ['Cornhole', 'Giant Jenga', 'Tic Tac Toe', 'Ring Toss', 'Playing Cards'], desc: 'Perfect for intimate gatherings — fun, simple, and full of energy.' },
-              { id: 'retro-vibes', name: 'Retro Vibes', price: '350,000 UGX', img: '/games/Carrom Board.png', games: ['Cornhole', 'Ring Toss', 'Ludo', 'Giant Jenga', 'Carrom Board', 'Chess', '2 Board Games', '1 Host'], desc: 'A curated retro mix with a host to keep the vibes going.' },
-              { id: 'tula-tucheze', name: 'Tula Tucheze', price: '450,000 UGX', img: '/games/Mini Golf Sets.png', games: ['Mini Golf', 'Cornhole', 'Ring Toss', 'Chess', 'Carrom Board', 'Ludo', 'Giant Jenga', 'TicTacToe', '2 Board Games', '1 Host'], desc: 'A full spread for bigger groups — variety, energy, and a host.' },
-              { id: 'afro-playhouse', name: 'Afro Playhouse', price: '550,000 UGX', img: '/games/Giant Connect 4.png', games: ['Giant Connect 4', 'Cornhole', 'Ring Toss', 'Giant Jenga', 'Tic Tac Toe', 'Chess', 'Ludo', 'Carrom Board', 'Mini Golf', '2 Board Games', '1 Host'], desc: 'The ultimate AfroRetro experience — maximum games, maximum fun.' },
+              { id: 'starter-spark', name: 'Starter Spark', price: '200,000 UGX', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516702/afroretro/games/Cornhole.jpg', games: ['Cornhole', 'Giant Jenga', 'Tic Tac Toe', 'Ring Toss', 'Playing Cards'], desc: 'Perfect for intimate gatherings — fun, simple, and full of energy.' },
+              { id: 'retro-vibes', name: 'Retro Vibes', price: '350,000 UGX', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516697/afroretro/games/Carrom-Board.jpg', games: ['Cornhole', 'Ring Toss', 'Ludo', 'Giant Jenga', 'Carrom Board', 'Chess', '2 Board Games', '1 Host'], desc: 'A curated retro mix with a host to keep the vibes going.' },
+              { id: 'tula-tucheze', name: 'Tula Tucheze', price: '450,000 UGX', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516712/afroretro/games/Mini-Golf-Sets.jpg', games: ['Mini Golf', 'Cornhole', 'Ring Toss', 'Chess', 'Carrom Board', 'Ludo', 'Giant Jenga', 'TicTacToe', '2 Board Games', '1 Host'], desc: 'A full spread for bigger groups — variety, energy, and a host.' },
+              { id: 'afro-playhouse', name: 'Afro Playhouse', price: '550,000 UGX', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516708/afroretro/games/Giant-Connect-4.jpg', games: ['Giant Connect 4', 'Cornhole', 'Ring Toss', 'Giant Jenga', 'Tic Tac Toe', 'Chess', 'Ludo', 'Carrom Board', 'Mini Golf', '2 Board Games', '1 Host'], desc: 'The ultimate AfroRetro experience — maximum games, maximum fun.' },
             ].map((pkg) => (
               <Link key={pkg.id} to={`/package/${pkg.id}`} className="package-card package-card-link" aria-label={`View ${pkg.name} package`}>
                 <div className="package-img-wrap">
@@ -267,10 +267,10 @@ export default function HomePage() {
           </div>
           <div className="freq-grid">
             {[
-              { id: 'giant-jenga', name: 'Giant Jenga', img: '/games/Giant Jenga.png', catch: 'Pull carefully. Laugh loudly. Repeat.' },
-              { id: 'cornhole', name: 'Cornhole', img: '/games/Cornhole.png', catch: 'Easy to learn, impossible to put down.' },
-              { id: 'mini-golf', name: 'Mini Golf', img: '/games/Mini Golf Sets.png', catch: 'Putt your way to the best time of the night.' },
-              { id: 'bouncing-castles', name: 'Bouncing Castles', img: '/games/Bouncing Castles.png', catch: 'Because everyone deserves to bounce.' },
+              { id: 'giant-jenga', name: 'Giant Jenga', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516709/afroretro/games/Giant-Jenga.jpg', catch: 'Pull carefully. Laugh loudly. Repeat.' },
+              { id: 'cornhole', name: 'Cornhole', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516702/afroretro/games/Cornhole.jpg', catch: 'Easy to learn, impossible to put down.' },
+              { id: 'mini-golf', name: 'Mini Golf', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516712/afroretro/games/Mini-Golf-Sets.jpg', catch: 'Putt your way to the best time of the night.' },
+              { id: 'bouncing-castles', name: 'Bouncing Castles', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516693/afroretro/games/Bouncing-Castles.jpg', catch: 'Because everyone deserves to bounce.' },
             ].map(g => (
               <Link key={g.id} to={`/book/${g.id}`} className="freq-card freq-card-link" aria-label={`View ${g.name}`}>
                 <div className="freq-img"><img src={g.img} alt={g.name} /></div>
@@ -307,7 +307,7 @@ export default function HomePage() {
       {/* Footer Banner */}
       <div style={{ padding: '0 16px 3rem' }}>
         <div className="footer-banner">
-          <img src="/footer-banner.png" className="banner-bg" alt="AfroRetro event" />
+          <img src="https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516616/afroretro/footer-banner.jpg" className="banner-bg" alt="AfroRetro event" />
           <div className="footer-banner-overlay" />
           <div className="footer-banner-content">
             <p className="hero-kicker">Your Event Deserves More</p>
@@ -325,7 +325,7 @@ export default function HomePage() {
       <footer className="site-footer">
         <div className="footer-inner">
           <div className="footer-brand">
-            <img src="/afroretro-logo.png" alt="AfroRetro Games" />
+            <img src="https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516586/afroretro/afroretro-logo.png" alt="AfroRetro Games" />
             <p>Where culture and play come together. Bringing vibrant, interactive game experiences to events across Uganda.</p>
             <div className="footer-social-row">
               <a href="https://x.com/afroretro343313?s=21" target="_blank" rel="noreferrer" className="footer-social-icon footer-social-x" aria-label="X"><FaXTwitter /></a>

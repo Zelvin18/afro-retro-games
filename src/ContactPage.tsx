@@ -39,7 +39,7 @@ export default function ContactPage() {
 
       {/* Hero */}
       <section className="contact-hero">
-        <img src="/home.png" className="hero-image" alt="Contact AfroRetro" />
+        <img src="https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516726/afroretro/home.jpg" className="hero-image" alt="Contact AfroRetro" />
         <div className="hero-overlay" />
         <div className="contact-hero-content">
           <p className="hero-kicker">We'd Love to Hear From You</p>

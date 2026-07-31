@@ -5,41 +5,41 @@ const navItems = [
   {
     label: 'Party Hire',
     sections: [
-      { title: 'Outdoor Games', image: '/games/Bouncing Castles.png', slug: 'outdoor-games', links: [{ label: 'Bouncing Castles', to: '/book/bouncing-castles' }, { label: 'Cornhole', to: '/book/cornhole' }, { label: 'Mini Golf Sets', to: '/book/mini-golf' }] },
-      { title: 'Indoor Games', image: '/games/Playstation Sets.png', slug: 'indoor-games', links: [{ label: 'Ludo Boards', to: '/book/ludo-boards' }, { label: 'Virtual Reality Set', to: '/book/virtual-reality' }, { label: 'PlayStation Sets', to: '/book/playstation-sets' }] },
-      { title: 'Quick Service', image: '/games/Giant Jenga.png', slug: 'quick-service', text: 'Flexible daily and weekend hire plans with full setup support.' },
+      { title: 'Outdoor Games', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516693/afroretro/games/Bouncing-Castles.jpg', slug: 'outdoor-games', links: [{ label: 'Bouncing Castles', to: '/book/bouncing-castles' }, { label: 'Cornhole', to: '/book/cornhole' }, { label: 'Mini Golf Sets', to: '/book/mini-golf' }] },
+      { title: 'Indoor Games', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516715/afroretro/games/Playstation-Sets.jpg', slug: 'indoor-games', links: [{ label: 'Ludo Boards', to: '/book/ludo-boards' }, { label: 'Virtual Reality Set', to: '/book/virtual-reality' }, { label: 'PlayStation Sets', to: '/book/playstation-sets' }] },
+      { title: 'Quick Service', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516709/afroretro/games/Giant-Jenga.jpg', slug: 'quick-service', text: 'Flexible daily and weekend hire plans with full setup support.' },
     ],
   },
   {
     label: 'Party Planning',
     sections: [
-      { title: 'Kids Parties', image: '/games/Bouncing Castles.png', slug: 'birthday-events', links: [{ label: 'Theme Concepts', to: '/events/theme-concepts' }, { label: 'Live Hosts', to: '/events/live-hosts' }, { label: 'Music & Sound Packages', to: '/events/music-sound' }] },
-      { title: 'Family Events', image: '/games/Giant Connect 4.png', slug: 'community-festivals', links: [{ label: 'Birthday Events', to: '/events/birthday-events' }, { label: 'Community Festivals', to: '/events/community-festivals' }, { label: 'Seasonal Celebrations', to: '/events/seasonal-celebrations' }] },
-      { title: 'Creative Styling', image: '/games/Canvas Painting.png', slug: 'theme-concepts', text: 'Colorful layouts, game zones, and immersive décor ideas for any venue.' },
+      { title: 'Kids Parties', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516693/afroretro/games/Bouncing-Castles.jpg', slug: 'birthday-events', links: [{ label: 'Theme Concepts', to: '/events/theme-concepts' }, { label: 'Live Hosts', to: '/events/live-hosts' }, { label: 'Music & Sound Packages', to: '/events/music-sound' }] },
+      { title: 'Family Events', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516708/afroretro/games/Giant-Connect-4.jpg', slug: 'community-festivals', links: [{ label: 'Birthday Events', to: '/events/birthday-events' }, { label: 'Community Festivals', to: '/events/community-festivals' }, { label: 'Seasonal Celebrations', to: '/events/seasonal-celebrations' }] },
+      { title: 'Creative Styling', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516695/afroretro/games/Canvas-Painting.jpg', slug: 'theme-concepts', text: 'Colorful layouts, game zones, and immersive décor ideas for any venue.' },
     ],
   },
   {
     label: 'School Events',
     sections: [
-      { title: 'School Fun Days', image: '/games/Cornhole.png', slug: 'sports-day', links: [{ label: 'Sports Day Games', to: '/events/sports-day' }, { label: 'House Competitions', to: '/events/house-competitions' }, { label: 'Reward Day Activities', to: '/events/reward-day' }] },
-      { title: 'Educational Play', image: '/games/Chess Boards.png', slug: 'stem-booths', links: [{ label: 'Team Challenges', to: '/events/team-challenges' }, { label: 'STEM Game Booths', to: '/events/stem-booths' }, { label: 'Interactive Retro Games', to: '/events/retro-games-school' }] },
-      { title: 'Packages', image: '/games/Ludo Boards.png', slug: 'quick-service', text: 'School-focused bundles for indoor halls, fields, and mixed activity days.' },
+      { title: 'School Fun Days', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516702/afroretro/games/Cornhole.jpg', slug: 'sports-day', links: [{ label: 'Sports Day Games', to: '/events/sports-day' }, { label: 'House Competitions', to: '/events/house-competitions' }, { label: 'Reward Day Activities', to: '/events/reward-day' }] },
+      { title: 'Educational Play', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516699/afroretro/games/Chess-Boards.jpg', slug: 'stem-booths', links: [{ label: 'Team Challenges', to: '/events/team-challenges' }, { label: 'STEM Game Booths', to: '/events/stem-booths' }, { label: 'Interactive Retro Games', to: '/events/retro-games-school' }] },
+      { title: 'Packages', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516711/afroretro/games/Ludo-Boards.jpg', slug: 'quick-service', text: 'School-focused bundles for indoor halls, fields, and mixed activity days.' },
     ],
   },
   {
     label: 'Private Events',
     sections: [
-      { title: 'Celebrations', image: '/games/Giant Connect 4.png', slug: 'birthdays-private', links: [{ label: 'Birthdays', to: '/events/birthdays-private' }, { label: 'Garden Gatherings', to: '/events/garden-gatherings' }, { label: 'Milestone Events', to: '/events/milestone-events' }] },
-      { title: 'Premium Hire', image: '/games/Playstation Sets.png', slug: 'game-lounge', links: [{ label: 'Game Lounge Setup', to: '/events/game-lounge' }, { label: 'Interactive Photo Corners', to: '/events/interactive-photo' }] },
-      { title: 'Bespoke Design', image: '/games/Canvas Painting.png', slug: 'theme-concepts', text: 'Tailored private-event experiences designed around your guest list and theme.' },
+      { title: 'Celebrations', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516708/afroretro/games/Giant-Connect-4.jpg', slug: 'birthdays-private', links: [{ label: 'Birthdays', to: '/events/birthdays-private' }, { label: 'Garden Gatherings', to: '/events/garden-gatherings' }, { label: 'Milestone Events', to: '/events/milestone-events' }] },
+      { title: 'Premium Hire', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516715/afroretro/games/Playstation-Sets.jpg', slug: 'game-lounge', links: [{ label: 'Game Lounge Setup', to: '/events/game-lounge' }, { label: 'Interactive Photo Corners', to: '/events/interactive-photo' }] },
+      { title: 'Bespoke Design', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516695/afroretro/games/Canvas-Painting.jpg', slug: 'theme-concepts', text: 'Tailored private-event experiences designed around your guest list and theme.' },
     ],
   },
   {
     label: 'Corporate Events',
     sections: [
-      { title: 'Team Building', image: '/games/Table Tennis.png', slug: 'office-olympics', links: [{ label: 'Office Olympics', to: '/events/office-olympics' }, { label: 'Retro Tournament Nights', to: '/events/retro-tournament' }, { label: 'Problem-Solving Challenges', to: '/events/problem-solving' }] },
-      { title: 'Brand Activations', image: '/games/Virtual Reality set.png', slug: 'popup-game-zones', links: [{ label: 'Pop-Up Game Zones', to: '/events/popup-game-zones' }, { label: 'Exhibition Attractions', to: '/events/exhibition-attractions' }, { label: 'Family Day Entertainment', to: '/events/family-day' }] },
-      { title: 'Managed Delivery', image: '/games/Giant Jenga.png', slug: 'quick-service', text: 'Professional event coordination from planning to on-site execution.' },
+      { title: 'Team Building', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516717/afroretro/games/Table-Tennis.jpg', slug: 'office-olympics', links: [{ label: 'Office Olympics', to: '/events/office-olympics' }, { label: 'Retro Tournament Nights', to: '/events/retro-tournament' }, { label: 'Problem-Solving Challenges', to: '/events/problem-solving' }] },
+      { title: 'Brand Activations', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516724/afroretro/games/Virtual-Reality-set.jpg', slug: 'popup-game-zones', links: [{ label: 'Pop-Up Game Zones', to: '/events/popup-game-zones' }, { label: 'Exhibition Attractions', to: '/events/exhibition-attractions' }, { label: 'Family Day Entertainment', to: '/events/family-day' }] },
+      { title: 'Managed Delivery', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516709/afroretro/games/Giant-Jenga.jpg', slug: 'quick-service', text: 'Professional event coordination from planning to on-site execution.' },
     ],
   },
 ]
@@ -85,7 +85,7 @@ export default function Navbar() {
       <header className="site-header" ref={headerRef} onMouseLeave={() => setActiveMenu(null)}>
         <div className="header-inner">
           <Link to="/" className="logo-link" aria-label="AfroRetro Games home">
-            <img src="/afroretro-logo.png" className="logo-img" alt="AfroRetro Games logo" />
+            <img src="https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516586/afroretro/afroretro-logo.png" className="logo-img" alt="AfroRetro Games logo" />
           </Link>
 
           <button

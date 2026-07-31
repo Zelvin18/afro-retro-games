@@ -166,7 +166,7 @@ export default function BookingPage() {
 
       {/* Hero */}
       <section className="game-hero-section">
-        <img src="/home.png" className="hero-image" alt="Event background" />
+        <img src="https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516726/afroretro/home.jpg" className="hero-image" alt="Event background" />
         <div className="hero-overlay" />
         <div className="game-hero-content">
           <p className="hero-kicker">AfroRetro Games — Book Now</p>

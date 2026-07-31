@@ -5,24 +5,24 @@ import { Link } from 'react-router-dom'
 import './GalleryPage.css'
 
 const allImages = [
-  { src: '/gallery/1.jpg', alt: 'AfroRetro event moment 1' },
-  { src: '/gallery/2.jpg', alt: 'AfroRetro event moment 2' },
-  { src: '/gallery/3.jpg', alt: 'AfroRetro event moment 3' },
-  { src: '/gallery/4.jpg', alt: 'AfroRetro event moment 4' },
-  { src: '/gallery/5.jpg', alt: 'AfroRetro event moment 5' },
-  { src: '/gallery/6.jpg', alt: 'AfroRetro event moment 6' },
-  { src: '/gallery/7.jpg', alt: 'AfroRetro event moment 7' },
-  { src: '/gallery/8.jpg', alt: 'AfroRetro event moment 8' },
-  { src: '/gallery/BOA - TGIF 2025-15.jpg', alt: 'BOA TGIF 2025' },
-  { src: '/gallery/BOA - TGIF 2025-30.jpg', alt: 'BOA TGIF 2025' },
-  { src: '/gallery/BOA - TGIF 2025-74.jpg', alt: 'BOA TGIF 2025' },
-  { src: '/gallery/BOA - TGIF 2025-98.jpg', alt: 'BOA TGIF 2025' },
-  { src: '/gallery/DSC02023.JPG', alt: 'AfroRetro event' },
-  { src: '/gallery/DSC02029.JPG', alt: 'AfroRetro event' },
-  { src: '/gallery/DSC02057.JPG', alt: 'AfroRetro event' },
-  { src: '/gallery/IMG_5544.jpg', alt: 'AfroRetro event' },
-  { src: '/gallery/IMG_8976.jpg', alt: 'AfroRetro event' },
-  { src: '/gallery/IMG_8978.jpg', alt: 'AfroRetro event' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516617/afroretro/gallery/1.jpg', alt: 'AfroRetro event moment 1' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516619/afroretro/gallery/2.jpg', alt: 'AfroRetro event moment 2' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516621/afroretro/gallery/3.jpg', alt: 'AfroRetro event moment 3' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516622/afroretro/gallery/4.jpg', alt: 'AfroRetro event moment 4' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516626/afroretro/gallery/5.jpg', alt: 'AfroRetro event moment 5' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516642/afroretro/gallery/6.jpg', alt: 'AfroRetro event moment 6' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516646/afroretro/gallery/7.jpg', alt: 'AfroRetro event moment 7' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516650/afroretro/gallery/8.jpg', alt: 'AfroRetro event moment 8' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516655/afroretro/gallery/BOA---TGIF-2025-15.jpg', alt: 'BOA TGIF 2025' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516658/afroretro/gallery/BOA---TGIF-2025-30.jpg', alt: 'BOA TGIF 2025' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516662/afroretro/gallery/BOA---TGIF-2025-74.jpg', alt: 'BOA TGIF 2025' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516665/afroretro/gallery/BOA---TGIF-2025-98.jpg', alt: 'BOA TGIF 2025' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516670/afroretro/gallery/DSC02023.jpg', alt: 'AfroRetro event' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516672/afroretro/gallery/DSC02029.jpg', alt: 'AfroRetro event' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516674/afroretro/gallery/DSC02057.jpg', alt: 'AfroRetro event' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516678/afroretro/gallery/IMG_5544.jpg', alt: 'AfroRetro event' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516686/afroretro/gallery/IMG_8976.jpg', alt: 'AfroRetro event' },
+  { src: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516691/afroretro/gallery/IMG_8978.jpg', alt: 'AfroRetro event' },
 ]
 
 export default function GalleryPage() {
@@ -37,7 +37,7 @@ export default function GalleryPage() {
 
       {/* Hero */}
       <section className="hero-section">
-        <img src="/home.png" className="hero-image" alt="Children enjoying outdoor games at an event" />
+        <img src="https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516726/afroretro/home.jpg" className="hero-image" alt="Children enjoying outdoor games at an event" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <p className="hero-kicker">AfroRetro Games Experiences</p>

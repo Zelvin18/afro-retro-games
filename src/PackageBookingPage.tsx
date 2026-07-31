@@ -157,7 +157,7 @@ export default function PackageBookingPage() {
       <Navbar />
 
       <section className="game-hero-section">
-        <img src="/home.png" className="hero-image" alt="Package booking" />
+        <img src="https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516726/afroretro/home.jpg" className="hero-image" alt="Package booking" />
         <div className="hero-overlay" />
         <div className="game-hero-content">
           <p className="hero-kicker">AfroRetro Games — Package Booking</p>
