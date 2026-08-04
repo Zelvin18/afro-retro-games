@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
+  <url><loc>https://afroretrogames.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://afroretrogames.com/games</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://afroretrogames.com/gallery</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Package pages -->
+  <url><loc>https://afroretrogames.com/package/starter-spark</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://afroretrogames.com/package/retro-vibes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://afroretrogames.com/package/tula-tucheze</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://afroretrogames.com/package/afro-playhouse</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Individual game booking pages -->
+  <url><loc>https://afroretrogames.com/book/bouncing-castles</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://afroretrogames.com/book/canvas-painting</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/carrom-board</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/chess-boards</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/clowns-mascots</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/cornhole</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://afroretrogames.com/book/darts-board</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/face-painting</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/foosball-table</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/giant-connect-4</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/giant-jenga</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://afroretrogames.com/book/ludo-boards</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/mini-golf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://afroretrogames.com/book/omweso</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/playstation-sets</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/ring-toss</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/table-tennis</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/tic-tac-toe</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/trampolines</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/book/virtual-reality</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Event pages -->
+  <url><loc>https://afroretrogames.com/events/outdoor-games</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/indoor-games</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/birthday-events</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/corporate-events</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/sports-day</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/community-festivals</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/office-olympics</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/family-day</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/retro-tournament</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/birthdays-private</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/garden-gatherings</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/milestone-events</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/reward-day</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/stem-booths</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://afroretrogames.com/events/house-competitions</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+</urlset>
