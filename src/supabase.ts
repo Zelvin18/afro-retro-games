@@ -4,7 +4,7 @@
  * so no other files need to be updated.
  */
 
-const API_BASE = 'https://afroretrogames.com/api'
+const API_BASE = 'https://api.afroretrogames.com'
 
 // ── Types matching the DB schema ──────────────────────────────
 

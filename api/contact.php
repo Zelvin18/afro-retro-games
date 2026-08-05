@@ -5,7 +5,11 @@
  */
 
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: https://afroretrogames.com');
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+$allowed = ['https://afroretrogames.com', 'https://www.afroretrogames.com'];
+if (in_array($origin, $allowed)) {
+    header("Access-Control-Allow-Origin: $origin");
+}
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
