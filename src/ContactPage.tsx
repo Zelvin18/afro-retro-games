@@ -70,7 +70,7 @@ export default function ContactPage() {
             <div className="contact-card">
               <div className="contact-card-icon email-icon"><FaEnvelope /></div>
               <h3>Email</h3>
-              <a href="mailto:Info.afroretro@gmail.com">Info.afroretro@gmail.com</a>
+              <a href="mailto:info@afroretrogames.com">info@afroretrogames.com</a>
             </div>
             <div className="contact-card">
               <div className="contact-card-icon clock-icon"><FaClock /></div>

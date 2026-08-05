@@ -356,7 +356,7 @@ export default function HomePage() {
             <h4>Contact</h4>
             <ul>
               <li><a href="tel:+256703239422">+256 703 239 422</a></li>
-              <li><a href="mailto:Info.afroretro@gmail.com">Info.afroretro@gmail.com</a></li>
+              <li><a href="mailto:info@afroretrogames.com">info@afroretrogames.com</a></li>
               <li><span>Kira, Kampala, Uganda</span></li>
               <li><span>Mon – Sat: 9AM – 6PM</span></li>
             </ul>
