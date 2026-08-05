@@ -6,6 +6,10 @@
 
 const API_BASE = 'https://api.afroretrogames.com'
 
+// Note: PHP files should be placed directly in api.afroretrogames.com/public_html/
+// URLs will be: https://api.afroretrogames.com/booking.php
+//               https://api.afroretrogames.com/contact.php
+
 // ── Types matching the DB schema ──────────────────────────────
 
 export interface BookingInsert {
