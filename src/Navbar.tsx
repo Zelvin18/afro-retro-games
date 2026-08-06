@@ -5,9 +5,10 @@ const navItems = [
   {
     label: 'Packages',
     sections: [
-      { title: 'Starter Spark', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516702/afroretro/games/Cornhole.jpg', slug: 'package/starter-spark', links: [{ label: 'Cornhole', to: '/book/cornhole' }, { label: 'Giant Jenga', to: '/book/giant-jenga' }, { label: 'Ring Toss', to: '/book/ring-toss' }] },
-      { title: 'Retro Vibes', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516697/afroretro/games/Carrom-Board.jpg', slug: 'package/retro-vibes', links: [{ label: 'Carrom Board', to: '/book/carrom-board' }, { label: 'Ludo Boards', to: '/book/ludo-boards' }, { label: 'Chess Boards', to: '/book/chess-boards' }] },
-      { title: 'Tula Tucheze', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516712/afroretro/games/Mini-Golf-Sets.jpg', slug: 'package/tula-tucheze', text: 'A full spread for bigger groups — variety, energy, and a host included.' },
+      { title: 'Starter Spark', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516702/afroretro/games/Cornhole.jpg', slug: 'package/starter-spark', links: [{ label: 'Book Starter Spark →', to: '/package/starter-spark' }] },
+      { title: 'Retro Vibes', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516697/afroretro/games/Carrom-Board.jpg', slug: 'package/retro-vibes', links: [{ label: 'Book Retro Vibes →', to: '/package/retro-vibes' }] },
+      { title: 'Tula Tucheze', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516712/afroretro/games/Mini-Golf-Sets.jpg', slug: 'package/tula-tucheze', links: [{ label: 'Book Tula Tucheze →', to: '/package/tula-tucheze' }] },
+      { title: 'Afro Playhouse', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516708/afroretro/games/Giant-Connect-4.jpg', slug: 'package/afro-playhouse', links: [{ label: 'Book Afro Playhouse →', to: '/package/afro-playhouse' }] },
     ],
   },
   {
@@ -110,7 +111,6 @@ export default function Navbar() {
                 </button>
               </div>
             ))}
-            <Link to="/gallery" className="nav-link static-link">Gallery</Link>
             <Link to="/about" className="nav-link static-link">About Us</Link>
             <Link to="/contact" className="nav-link static-link">Contact Us</Link>
           </nav>
@@ -118,7 +118,7 @@ export default function Navbar() {
 
         {/* Desktop dropdown */}
         <div
-          className={`dropdown-panel ${currentItem ? 'show' : ''}`}
+          className={`dropdown-panel ${currentItem ? 'show' : ''} ${currentItem?.label === 'Packages' ? 'dropdown-panel-4col' : ''}`}
           onMouseEnter={() => { if (currentItem) setActiveMenu(currentItem.label) }}
           onMouseLeave={() => setActiveMenu(null)}
         >
@@ -128,7 +128,7 @@ export default function Navbar() {
                 <img src={section.image} className="dropdown-thumb" alt={section.title} />
               </Link>
               <h3>
-                <Link to={`/${section.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to={`/${section.slug}`} style={{ textDecoration: 'none', color: 'inherit', fontWeight: 800 }}>
                   {section.title}
                 </Link>
               </h3>
@@ -148,19 +148,21 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       <nav className={`mobile-drawer ${mobileOpen ? 'open' : ''}`} aria-label="Mobile navigation">
-        <div className="mobile-drawer-header">
-          <Link to="/" className="mobile-drawer-home" onClick={() => setMobileOpen(false)}>
-            🏠 Home
-          </Link>
-          <button
-            className="mobile-drawer-close"
-            onClick={() => setMobileOpen(false)}
-            aria-label="Close menu"
-          >
-            ✕
-          </button>
-        </div>
         <div className="mobile-drawer-inner">
+          {/* Home + Close row — inside the drawer */}
+          <div className="mobile-drawer-top">
+            <Link to="/" className="mobile-drawer-home" onClick={() => setMobileOpen(false)}>
+              🏠 Home
+            </Link>
+            <button
+              className="mobile-drawer-close"
+              onClick={() => setMobileOpen(false)}
+              aria-label="Close menu"
+            >
+              ✕
+            </button>
+          </div>
+
           {navItems.map((item) => (
             <div key={item.label} className="mobile-nav-group">
               <button
@@ -189,7 +191,6 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <Link to="/gallery" className="mobile-nav-parent static">Gallery</Link>
           <Link to="/about" className="mobile-nav-parent static">About Us</Link>
           <Link to="/contact" className="mobile-nav-parent static">Contact Us</Link>
           <div className="mobile-drawer-cta">
