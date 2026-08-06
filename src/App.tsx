@@ -8,6 +8,7 @@ import AllGamesPage from './AllGamesPage'
 import ContactPage from './ContactPage'
 import PackageBookingPage from './PackageBookingPage'
 import EventPage from './EventPage'
+import AboutPage from './AboutPage'
 import NotFoundPage from './NotFoundPage'
 import { eventConfigs } from './eventConfigs'
 
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/package/:packageId" element={<PackageBookingPage />} />
         <Route path="/games" element={<AllGamesPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
         {Object.entries(eventConfigs).map(([slug, config]) => (
           <Route key={slug} path={`/events/${slug}`} element={<EventPage config={config} />} />
         ))}

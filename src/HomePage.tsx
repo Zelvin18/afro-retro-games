@@ -123,6 +123,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Brand Intro */}
+      <section className="brand-intro-section" aria-label="About AfroRetro">
+        <div className="brand-intro-inner">
+          <p className="section-kicker">Welcome to AfroRetro Games</p>
+          <h2>Where Culture and Play Come Together</h2>
+          <p>
+            We create vibrant, interactive game experiences inspired by the games we grew up with
+            and the joy of shared moments. From Giant Jenga to VR sets — we deliver, set up, and
+            make your event one for the books. Birthdays, corporate days, school events, and more
+            across Kampala, Uganda.
+          </p>
+          <div className="brand-intro-actions">
+            <Link to="/games" className="hero-button" style={{ display: 'inline-block' }}>Explore Our Games</Link>
+            <Link to="/about" className="view-all-games-btn">About Us</Link>
+          </div>
+        </div>
+      </section>
+
       {/* Games */}
       <section className="games-section" aria-labelledby="games-heading">
         <div className="games-inner">
@@ -145,6 +163,71 @@ export default function HomePage() {
                 </div>
                 <div className="game-actions">
                   <span className="game-button">Book Now</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Packages — right after games */}
+      <section className="packages-section" aria-labelledby="packages-heading">
+        <div className="packages-inner">
+          <div className="packages-header">
+            <p className="section-kicker">Curated for Every Occasion</p>
+            <h2 id="packages-heading">Games Packages</h2>
+            <p>Pick a ready-made bundle and let us handle the rest — delivery, setup, and all.</p>
+          </div>
+          <div className="packages-grid">
+            {[
+              { id: 'starter-spark', name: 'Starter Spark', price: '200,000 UGX', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516702/afroretro/games/Cornhole.jpg', games: ['Cornhole', 'Giant Jenga', 'Tic Tac Toe', 'Ring Toss', 'Playing Cards'], desc: 'Perfect for intimate gatherings — fun, simple, and full of energy.' },
+              { id: 'retro-vibes', name: 'Retro Vibes', price: '350,000 UGX', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516697/afroretro/games/Carrom-Board.jpg', games: ['Cornhole', 'Ring Toss', 'Ludo', 'Giant Jenga', 'Carrom Board', 'Chess', '2 Board Games', '1 Host'], desc: 'A curated retro mix with a host to keep the vibes going.' },
+              { id: 'tula-tucheze', name: 'Tula Tucheze', price: '450,000 UGX', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516712/afroretro/games/Mini-Golf-Sets.jpg', games: ['Mini Golf', 'Cornhole', 'Ring Toss', 'Chess', 'Carrom Board', 'Ludo', 'Giant Jenga', 'TicTacToe', '2 Board Games', '1 Host'], desc: 'A full spread for bigger groups — variety, energy, and a host.' },
+              { id: 'afro-playhouse', name: 'Afro Playhouse', price: '550,000 UGX', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516708/afroretro/games/Giant-Connect-4.jpg', games: ['Giant Connect 4', 'Cornhole', 'Ring Toss', 'Giant Jenga', 'Tic Tac Toe', 'Chess', 'Ludo', 'Carrom Board', 'Mini Golf', '2 Board Games', '1 Host'], desc: 'The ultimate AfroRetro experience — maximum games, maximum fun.' },
+            ].map((pkg) => (
+              <Link key={pkg.id} to={`/package/${pkg.id}`} className="package-card package-card-link" aria-label={`View ${pkg.name} package`}>
+                <div className="package-img-wrap">
+                  <img src={pkg.img} alt={pkg.name} />
+                  <div className="package-img-overlay" />
+                  <div className="package-img-label">
+                    <h3>{pkg.name}</h3>
+                    <span className="package-price-badge">{pkg.price}</span>
+                  </div>
+                </div>
+                <div className="package-body">
+                  <p style={{ margin: 0, fontSize: '0.88rem', color: 'rgba(32,25,66,0.7)', fontWeight: 600 }}>{pkg.desc}</p>
+                  <div className="package-games">
+                    {pkg.games.map(g => <span key={g} className="pkg-game-tag">{g}</span>)}
+                  </div>
+                  <span className="package-book-btn">Book This Package</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Frequently Booked */}
+      <section className="freq-section" aria-labelledby="freq-heading">
+        <div className="freq-inner">
+          <div className="freq-header">
+            <p className="section-kicker">Client Favourites</p>
+            <h2 id="freq-heading">Most Frequently Booked</h2>
+            <p>These four never disappoint — our most requested games at every event.</p>
+          </div>
+          <div className="freq-grid">
+            {[
+              { id: 'giant-jenga', name: 'Giant Jenga', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516709/afroretro/games/Giant-Jenga.jpg', catch: 'Pull carefully. Laugh loudly. Repeat.' },
+              { id: 'cornhole', name: 'Cornhole', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516702/afroretro/games/Cornhole.jpg', catch: 'Easy to learn, impossible to put down.' },
+              { id: 'mini-golf', name: 'Mini Golf', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516712/afroretro/games/Mini-Golf-Sets.jpg', catch: 'Putt your way to the best time of the night.' },
+              { id: 'bouncing-castles', name: 'Bouncing Castles', img: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516693/afroretro/games/Bouncing-Castles.jpg', catch: 'Because everyone deserves to bounce.' },
+            ].map(g => (
+              <Link key={g.id} to={`/book/${g.id}`} className="freq-card freq-card-link" aria-label={`View ${g.name}`}>
+                <div className="freq-img"><img src={g.img} alt={g.name} /></div>
+                <div className="freq-body">
+                  <h3>{g.name}</h3>
+                  <p>{g.catch}</p>
+                  <span className="freq-book-btn">Book Now</span>
                 </div>
               </Link>
             ))}

@@ -3,11 +3,11 @@ import { Link, useLocation } from 'react-router-dom'
 
 const navItems = [
   {
-    label: 'Party Hire',
+    label: 'Packages',
     sections: [
-      { title: 'Outdoor Games', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516693/afroretro/games/Bouncing-Castles.jpg', slug: 'outdoor-games', links: [{ label: 'Bouncing Castles', to: '/book/bouncing-castles' }, { label: 'Cornhole', to: '/book/cornhole' }, { label: 'Mini Golf Sets', to: '/book/mini-golf' }] },
-      { title: 'Indoor Games', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516715/afroretro/games/Playstation-Sets.jpg', slug: 'indoor-games', links: [{ label: 'Ludo Boards', to: '/book/ludo-boards' }, { label: 'Virtual Reality Set', to: '/book/virtual-reality' }, { label: 'PlayStation Sets', to: '/book/playstation-sets' }] },
-      { title: 'Quick Service', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516709/afroretro/games/Giant-Jenga.jpg', slug: 'quick-service', text: 'Flexible daily and weekend hire plans with full setup support.' },
+      { title: 'Starter Spark', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516702/afroretro/games/Cornhole.jpg', slug: 'package/starter-spark', links: [{ label: 'Cornhole', to: '/book/cornhole' }, { label: 'Giant Jenga', to: '/book/giant-jenga' }, { label: 'Ring Toss', to: '/book/ring-toss' }] },
+      { title: 'Retro Vibes', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516697/afroretro/games/Carrom-Board.jpg', slug: 'package/retro-vibes', links: [{ label: 'Carrom Board', to: '/book/carrom-board' }, { label: 'Ludo Boards', to: '/book/ludo-boards' }, { label: 'Chess Boards', to: '/book/chess-boards' }] },
+      { title: 'Tula Tucheze', image: 'https://res.cloudinary.com/nzxdstig/image/upload/f_auto,q_auto/v1785516712/afroretro/games/Mini-Golf-Sets.jpg', slug: 'package/tula-tucheze', text: 'A full spread for bigger groups — variety, energy, and a host included.' },
     ],
   },
   {
@@ -111,6 +111,7 @@ export default function Navbar() {
               </div>
             ))}
             <Link to="/gallery" className="nav-link static-link">Gallery</Link>
+            <Link to="/about" className="nav-link static-link">About Us</Link>
             <Link to="/contact" className="nav-link static-link">Contact Us</Link>
           </nav>
         </div>
@@ -123,11 +124,11 @@ export default function Navbar() {
         >
           {currentItem?.sections.map((section) => (
             <section key={section.title} className="dropdown-column">
-              <Link to={`/events/${section.slug}`}>
+              <Link to={`/${section.slug}`}>
                 <img src={section.image} className="dropdown-thumb" alt={section.title} />
               </Link>
               <h3>
-                <Link to={`/events/${section.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to={`/${section.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                   {section.title}
                 </Link>
               </h3>
@@ -147,6 +148,18 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       <nav className={`mobile-drawer ${mobileOpen ? 'open' : ''}`} aria-label="Mobile navigation">
+        <div className="mobile-drawer-header">
+          <Link to="/" className="mobile-drawer-home" onClick={() => setMobileOpen(false)}>
+            🏠 Home
+          </Link>
+          <button
+            className="mobile-drawer-close"
+            onClick={() => setMobileOpen(false)}
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
+        </div>
         <div className="mobile-drawer-inner">
           {navItems.map((item) => (
             <div key={item.label} className="mobile-nav-group">
@@ -162,7 +175,7 @@ export default function Navbar() {
                 <div className="mobile-nav-children">
                   {item.sections.map(section => (
                     <div key={section.title} className="mobile-nav-section">
-                      <Link to={`/events/${section.slug}`} className="mobile-nav-section-title">
+                      <Link to={`/${section.slug}`} className="mobile-nav-section-title">
                         {section.title}
                       </Link>
                       {section.links && section.links.map(link => (
@@ -177,6 +190,7 @@ export default function Navbar() {
             </div>
           ))}
           <Link to="/gallery" className="mobile-nav-parent static">Gallery</Link>
+          <Link to="/about" className="mobile-nav-parent static">About Us</Link>
           <Link to="/contact" className="mobile-nav-parent static">Contact Us</Link>
           <div className="mobile-drawer-cta">
             <Link to="/games" className="btn-next" style={{ textDecoration: 'none', textAlign: 'center' }}>Browse All Games</Link>
