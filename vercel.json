@@ -1,10 +1,7 @@
 {
-  "redirects": [
-    { "source": "/quiz/:pin(\\d{6})", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/join/:pin", "permanent": false },
-    { "source": "/quiz", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/", "permanent": false },
-    { "source": "/quiz/:path*", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/:path*", "permanent": false }
-  ],
   "rewrites": [
+    { "source": "/quiz", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/quiz/" },
+    { "source": "/quiz/:path*", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/quiz/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
