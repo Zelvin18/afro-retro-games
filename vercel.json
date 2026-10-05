@@ -1,7 +1,8 @@
 {
   "rewrites": [
     { "source": "/quiz", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/quiz/" },
-    { "source": "/quiz/:path*", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/quiz/:path*" },
+    { "source": "/quiz/", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/quiz/" },
+    { "source": "/quiz/:path+", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/quiz/:path+" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
