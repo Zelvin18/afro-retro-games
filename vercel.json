@@ -1,4 +1,9 @@
 {
+  "redirects": [
+    { "source": "/quiz/:pin(\\d{6})", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/join/:pin", "permanent": false },
+    { "source": "/quiz", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/", "permanent": false },
+    { "source": "/quiz/:path*", "destination": "https://afroretro-quiz.afroretro-quiz.workers.dev/:path*", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
